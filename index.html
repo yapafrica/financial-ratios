@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Your Knowledge - Financial Ratios & Decision Making</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: left;
+        }
+        #quiz-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        #quiz-container h2 {
+            margin-bottom: 20px;
+        }
+        .question {
+            margin: 15px 0;
+            display: none;
+        }
+        .question input {
+            margin-right: 10px;
+        }
+        #result {
+            margin-top: 20px;
+            display: none;
+        }
+        #result p {
+            font-size: 18px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            #quiz-container {
+                width: 100%;
+            }
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div id="quiz-container">
+    <h2>Test Your Knowledge - You have 10 questions!</h2>
+
+    <button id="startQuizBtn">Start Quiz</button>
+
+    <div id="questions">
+        <div class="question">
+            <p>What does the current ratio measure?</p>
+            <label><input type="radio" name="q1" value="a"> A company's ability to pay its short-term liabilities with short-term assets</label><br>
+            <label><input type="radio" name="q1" value="b"> A company's profitability</label><br>
+            <label><input type="radio" name="q1" value="c"> A company's long-term solvency</label><br>
+        </div>
+
+        <div class="question">
+            <p>Which of the following financial ratios measures a company's profitability?</p>
+            <label><input type="radio" name="q2" value="a"> Return on Assets (ROA)</label><br>
+            <label><input type="radio" name="q2" value="b"> Quick Ratio</label><br>
+            <label><input type="radio" name="q2" value="c"> Debt to Equity Ratio</label><br>
+        </div>
+
+        <div class="question">
+            <p>What does the Debt-to-Equity ratio indicate?</p>
+            <label><input type="radio" name="q3" value="a"> The proportion of equity and debt used to finance the company’s assets</label><br>
+            <label><input type="radio" name="q3" value="b"> The company’s ability to pay off short-term debt</label><br>
+            <label><input type="radio" name="q3" value="c"> The company's profitability ratio</label><br>
+        </div>
+
+        <div class="question">
+            <p>Which ratio would most likely be used to assess a company's efficiency in using its assets?</p>
+            <label><input type="radio" name="q4" value="a"> Return on Equity (ROE)</label><br>
+            <label><input type="radio" name="q4" value="b"> Return on Assets (ROA)</label><br>
+            <label><input type="radio" name="q4" value="c"> Gross Profit Margin</label><br>
+        </div>
+
+        <div class="question">
+            <p>What is the formula for calculating the Quick Ratio?</p>
+            <label><input type="radio" name="q5" value="a"> (Current Assets - Inventory) / Current Liabilities</label><br>
+            <label><input type="radio" name="q5" value="b"> Current Assets / Current Liabilities</label><br>
+            <label><input type="radio" name="q5" value="c"> (Current Assets - Current Liabilities) / Total Assets</label><br>
+        </div>
+
+        <div class="question">
+            <p>Which financial ratio is used to evaluate a company's leverage?</p>
+            <label><input type="radio" name="q6" value="a"> Return on Investment (ROI)</label><br>
+            <label><input type="radio" name="q6" value="b"> Debt-to-Equity Ratio</label><br>
+            <label><input type="radio" name="q6" value="c"> Gross Profit Margin</label><br>
+        </div>
+
+        <div class="question">
+            <p>What is the significance of the Gross Profit Margin ratio?</p>
+            <label><input type="radio" name="q7" value="a"> It measures how much of every dollar of sales is profit</label><br>
+            <label><input type="radio" name="q7" value="b"> It indicates the company’s ability to pay its liabilities</label><br>
+            <label><input type="radio" name="q7" value="c"> It shows how efficiently the company uses its assets</label><br>
+        </div>
+
+        <div class="question">
+            <p>Which financial ratio is most commonly used for analyzing a company’s liquidity?</p>
+            <label><input type="radio" name="q8" value="a"> Current Ratio</label><br>
+            <label><input type="radio" name="q8" value="b"> Return on Assets (ROA)</label><br>
+            <label><input type="radio" name="q8" value="c"> Price-to-Earnings (P/E) Ratio</label><br>
+        </div>
+
+        <div class="question">
+            <p>What does the Price-to-Earnings (P/E) ratio represent?</p>
+            <label><input type="radio" name="q9" value="a"> The company’s earnings per share compared to its stock price</label><br>
+            <label><input type="radio" name="q9" value="b"> The company’s total revenue divided by its liabilities</label><br>
+            <label><input type="radio" name="q9" value="c"> The ratio of the company’s profits to its equity capital</label><br>
+        </div>
+
+        <div class="question">
+            <p>How can the Return on Equity (ROE) ratio assist in decision-making?</p>
+            <label><input type="radio" name="q10" value="a"> It shows how much profit the company generates with shareholders' equity</label><br>
+            <label><input type="radio" name="q10" value="b"> It measures the company’s short-term solvency</label><br>
+            <label><input type="radio" name="q10" value="c"> It shows how efficiently the company manages its inventory</label><br>
+        </div>
+
+        <button id="submitBtn" style="display:none;">Submit</button>
+        <button id="retakeQuizBtn" style="display:none;" onclick="retakeQuiz()">Retake Quiz</button>
+    </div>
+
+    <div id="result" style="display:none;">
+        <p id="score"></p>
+    </div>
+</div>
+
+<script>
+    const startQuizBtn = document.getElementById('startQuizBtn');
+    const submitBtn = document.getElementById('submitBtn');
+    const resultDiv = document.getElementById('result');
+    const scoreText = document.getElementById('score');
+    const questions = document.querySelectorAll('.question');
+    const retakeQuizBtn = document.getElementById('retakeQuizBtn');
+
+    const correctAnswers = {
+        q1: 'a',
+        q2: 'a',
+        q3: 'a',
+        q4: 'b',
+        q5: 'a',
+        q6: 'b',
+        q7: 'a',
+        q8: 'a',
+        q9: 'a',
+        q10: 'a'
+    };
+
+    let score = 0;
+
+    startQuizBtn.addEventListener('click', () => {
+        startQuizBtn.style.display = 'none';
+        questions.forEach(question => question.style.display = 'block');
+        submitBtn.style.display = 'inline-block';
+    });
+
+    submitBtn.addEventListener('click', () => {
+        score = 0;
+        questions.forEach(question => {
+            const selectedAnswer = question.querySelector('input:checked');
+            const questionName = question.querySelector('input').name;
+            if (selectedAnswer && selectedAnswer.value === correctAnswers[questionName]) {
+                score++;
+            }
+        });
+        scoreText.textContent = `You got ${score} out of 10`;
+        resultDiv.style.display = 'block';
+        submitBtn.style.display = 'none';
+        retakeQuizBtn.style.display = 'inline-block';
+    });
+
+    function retakeQuiz() {
+        resultDiv.style.display = 'none';
+        questions.forEach(question => {
+            question.querySelector('input').checked = false;
+        });
+        score = 0;
+        submitBtn.style.display = 'inline-block';
+        retakeQuizBtn.style.display = 'none';
+    }
+</script>
+
+</body>
+</html>
